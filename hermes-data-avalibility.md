@@ -13,7 +13,7 @@
 | darknet   | NPD       | [darknet_npd_2651](bug_report/darknet/npd_3.json)     | https://github.com/pjreddie/darknet/issues/2651       |           | 1                 |
 | darknet   | ML        | [darknet_ml_2652](bug_report/darknet/ml_1.json)       | https://github.com/pjreddie/darknet/issues/2652       |           | 2                 |
 | darknet   | ML        | [darknet_ml_2653](bug_report/darknet/ml_2.json)       | https://github.com/pjreddie/darknet/issues/2653       |           | 1                 |
-| libuv     | NPD       | [libuv_npd_4695](bug_report/libuv/npd_1.json)         | https://github.com/libuv/libuv/issues/4695            | confirmed |                   |
+| libuv     | NPD       | [libuv_npd_4695](bug_report/libuv/npd_1.json)         | https://github.com/libuv/libuv/issues/4695            | confirmed | 1                 |
 | dynamips  | NPD       | [dynamips_npd_284](bug_report/dynamips/npd_1.json)    | https://github.com/GNS3/dynamips/issues/284           |           | 1                 |
 | dynamips  | NPD       | [dynamips_npd_285](bug_report/dynamips/npd_2.json)    | https://github.com/GNS3/dynamips/issues/285           |           | 2                 |
 | dynamips  | ML        | [dynamips_ml_291](bug_report/dynamips/ml_1.json)      | https://github.com/GNS3/dynamips/issues/291           |           | 1                 |
@@ -23,8 +23,8 @@
 | ppsspp    | NPD       | https://github.com/hrydgard/ppsspp/issues/20064       | https://github.com/hrydgard/ppsspp/issues/20064       | confirmed | 1                 |
 | ppsspp    | NPD       | https://github.com/hrydgard/ppsspp/issues/20069       | https://github.com/hrydgard/ppsspp/issues/20069       | confirmed | 1                 |
 | ppsspp    | ML        | https://github.com/hrydgard/ppsspp/issues/20048       | https://github.com/hrydgard/ppsspp/issues/20048       | confirmed | 1                 |
-| git       | NPD       | [git_npd_2](bug_report/git/git_npd_2.png)             | [git_npd_2](bug_report/git/git_npd_2.png)             | confirmed | 1                 |
-| git       | NPD       | [git_npd_3](bug_report/git/git_npd_3.png)             | [git_npd_3](bug_report/git/git_npd_3.png)             | confirmed | 1                 |
+| git       | NPD       | [git_npd_1](bug_report/git/git_npd_2.png)             | [git_npd_1](bug_report/git/git_npd_2.png)             | confirmed | 1                 |
+| git       | NPD       | [git_npd_2](bug_report/git/git_npd_3.png)             | [git_npd_2](bug_report/git/git_npd_3.png)             | confirmed | 1                 |
 | git       | ML        | [git_ml_1](bug_report/git/git_ml_1.png)               | [git_ml_1](bug_report/git/git_ml_1.png)               | confirmed | 1                 |
 | binutils  | NPD       | https://sourceware.org/bugzilla/show_bug.cgi?id=30951 | https://sourceware.org/bugzilla/show_bug.cgi?id=30951 | confirmed | 1                 |
 | binutils  | NPD       | [binutils_npd_32707](bug_report/binutils/npd_1.json)  | https://sourceware.org/bugzilla/show_bug.cgi?id=32707 | confirmed | 9                 |
