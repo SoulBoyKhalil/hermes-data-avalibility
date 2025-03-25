@@ -1,0 +1,180 @@
+[
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "dlls/opengl32/unix_wgl.c",
+                "Line": 99,
+                "Tip": "Store <b>null</b> to <b>%temp_var2</b>",
+                "RawTip": "Store <b>null</b> to <b>%temp_var2</b>",
+                "Importance": 100,
+                "FuncKey": "get_current_context_ptr.21160",
+                "FuncName": "get_current_context_ptr.21160"
+            },
+            {
+                "File": "dlls/opengl32/unix_wgl.c",
+                "Line": 101,
+                "Tip": "Return <b>%temp_var2</b> to caller",
+                "RawTip": "Return <b>%temp_var2</b> to caller",
+                "Importance": 100,
+                "FuncKey": "get_current_context_ptr.21160",
+                "FuncName": "get_current_context_ptr.21160"
+            },
+            {
+                "File": "dlls/opengl32/unix_wgl.c",
+                "Line": 935,
+                "Tip": "Store the return value of function <b>get_current_context_ptr</b> to <b>ptr</b>",
+                "RawTip": "Store the return value of function <b>get_current_context_ptr</b> to <b>ptr</b>",
+                "Importance": 100,
+                "FuncKey": "wrap_glDebugMessageCallback.21222",
+                "FuncName": "wrap_glDebugMessageCallback.21222"
+            },
+            {
+                "File": "dlls/opengl32/unix_wgl.c",
+                "Line": 940,
+                "Tip": "Load value from <b>ptr</b>",
+                "RawTip": "Load value from <b>ptr</b>",
+                "Importance": 100,
+                "FuncKey": "wrap_glDebugMessageCallback.21222",
+                "FuncName": "wrap_glDebugMessageCallback.21222"
+            },
+            {
+                "File": "dlls/opengl32/unix_wgl.c",
+                "Line": 940,
+                "Tip": "Load value from <b>ptr-&gt;u</b>",
+                "RawTip": "Load value from <b>ptr-&gt;u</b>",
+                "Importance": 100,
+                "FuncKey": "wrap_glDebugMessageCallback.21222",
+                "FuncName": "wrap_glDebugMessageCallback.21222"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    },
+
+
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "dlls/opengl32/unix_wgl.c",
+                "Line": 99,
+                "Tip": "Store <b>null</b> to <b>%temp_var2</b>",
+                "RawTip": "Store <b>null</b> to <b>%temp_var2</b>",
+                "Importance": 100,
+                "FuncKey": "get_current_context_ptr.21160",
+                "FuncName": "get_current_context_ptr.21160"
+            },
+            {
+                "File": "dlls/opengl32/unix_wgl.c",
+                "Line": 101,
+                "Tip": "Return <b>%temp_var2</b> to caller",
+                "RawTip": "Return <b>%temp_var2</b> to caller",
+                "Importance": 100,
+                "FuncKey": "get_current_context_ptr.21160",
+                "FuncName": "get_current_context_ptr.21160"
+            },
+            {
+                "File": "dlls/opengl32/unix_wgl.c",
+                "Line": 959,
+                "Tip": "Store the return value of function <b>get_current_context_ptr</b> to <b>ptr</b>",
+                "RawTip": "Store the return value of function <b>get_current_context_ptr</b> to <b>ptr</b>",
+                "Importance": 100,
+                "FuncKey": "wrap_glDebugMessageCallbackARB.21216",
+                "FuncName": "wrap_glDebugMessageCallbackARB.21216"
+            },
+            {
+                "File": "dlls/opengl32/unix_wgl.c",
+                "Line": 964,
+                "Tip": "Load value from <b>ptr</b>",
+                "RawTip": "Load value from <b>ptr</b>",
+                "Importance": 100,
+                "FuncKey": "wrap_glDebugMessageCallbackARB.21216",
+                "FuncName": "wrap_glDebugMessageCallbackARB.21216"
+            },
+            {
+                "File": "dlls/opengl32/unix_wgl.c",
+                "Line": 964,
+                "Tip": "Load value from <b>ptr-&gt;u</b>",
+                "RawTip": "Load value from <b>ptr-&gt;u</b>",
+                "Importance": 100,
+                "FuncKey": "wrap_glDebugMessageCallbackARB.21216",
+                "FuncName": "wrap_glDebugMessageCallbackARB.21216"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    },
+
+
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "dlls/opengl32/unix_wgl.c",
+                "Line": 99,
+                "Tip": "Store <b>null</b> to <b>%temp_var2</b>",
+                "RawTip": "Store <b>null</b> to <b>%temp_var2</b>",
+                "Importance": 100,
+                "FuncKey": "get_current_context_ptr.21160",
+                "FuncName": "get_current_context_ptr.21160"
+            },
+            {
+                "File": "dlls/opengl32/unix_wgl.c",
+                "Line": 101,
+                "Tip": "Return <b>%temp_var2</b> to caller",
+                "RawTip": "Return <b>%temp_var2</b> to caller",
+                "Importance": 100,
+                "FuncKey": "get_current_context_ptr.21160",
+                "FuncName": "get_current_context_ptr.21160"
+            },
+            {
+                "File": "dlls/opengl32/unix_wgl.c",
+                "Line": 947,
+                "Tip": "Store the return value of function <b>get_current_context_ptr</b> to <b>ptr</b>",
+                "RawTip": "Store the return value of function <b>get_current_context_ptr</b> to <b>ptr</b>",
+                "Importance": 100,
+                "FuncKey": "wrap_glDebugMessageCallbackAMD.21221",
+                "FuncName": "wrap_glDebugMessageCallbackAMD.21221"
+            },
+            {
+                "File": "dlls/opengl32/unix_wgl.c",
+                "Line": 953,
+                "Tip": "Load value from <b>ptr</b>",
+                "RawTip": "Load value from <b>ptr</b>",
+                "Importance": 100,
+                "FuncKey": "wrap_glDebugMessageCallbackAMD.21221",
+                "FuncName": "wrap_glDebugMessageCallbackAMD.21221"
+            },
+            {
+                "File": "dlls/opengl32/unix_wgl.c",
+                "Line": 953,
+                "Tip": "Load value from <b>ptr-&gt;u</b>",
+                "RawTip": "Load value from <b>ptr-&gt;u</b>",
+                "Importance": 100,
+                "FuncKey": "wrap_glDebugMessageCallbackAMD.21221",
+                "FuncName": "wrap_glDebugMessageCallbackAMD.21221"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    }
+]

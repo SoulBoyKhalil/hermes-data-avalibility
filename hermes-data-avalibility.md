@@ -5,7 +5,7 @@
 | project   | bug _type | merged bug_report path                       | bug_report URL                                        | status    | merged bug number |
 | --------- | --------- | -------------------------------------------- | ----------------------------------------------------- | --------- | ----------------- |
 | htop      | NPD       | [htop_npd_1602](bug_report/htop/1.json) | https://github.com/htop-dev/htop/issues/1602          | confirmed | 2                 |
-| htop      | NPD       |                                              | https://github.com/htop-dev/htop/issues/1605          | confirmed | 2                 |
+| htop      | NPD       | [htop_npd_1605](bug_report/htop/2.json)      | https://github.com/htop-dev/htop/issues/1605          | confirmed | 2                 |
 | lame      | NPD       |                                              | https://sourceforge.net/p/lame/bugs/518/              |           | 1                 |
 | memcached | NPD       |                                              | https://github.com/memcached/memcached/issues/1204    | deny      | 1                 |
 | memcached | NPD       |                                              | https://github.com/memcached/memcached/issues/1205    | confirmed | 1                 |
@@ -41,6 +41,6 @@
 | mariaDB   | NPD       |                                              | https://jira.mariadb.org/browse/MDEV-29643            | confirmed | 1                 |
 | mariaDB   | NPD       |                                              | https://jira.mariadb.org/browse/MDEV-29644            | confirmed | 1                 |
 | mariaDB   | NPD       |                                              | https://jira.mariadb.org/browse/MDEV-29881            | confirmed | 1                 |
-| wine      | NPD       |                                              | https://bugs.winehq.org/show_bug.cgi?id=57929         | deny      | 1                 |
-| wine      | NPD       |                                              | https://bugs.winehq.org/show_bug.cgi?id=57928         |           | 3                 |
+| wine      | NPD       | [wine_npd_57929](bug_report/wine/1.json)                                             | https://bugs.winehq.org/show_bug.cgi?id=57929         | deny      | 1                 |
+| wine      | NPD       | [wine_npd_57928](bug_report/wine/2.json)                                             | https://bugs.winehq.org/show_bug.cgi?id=57928         |           | 3                 |
 

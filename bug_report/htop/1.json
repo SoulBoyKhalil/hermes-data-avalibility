@@ -1,0 +1,120 @@
+[
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "Panel.c",
+                "Line": 163,
+                "Tip": "Store <b>null</b> to <b>%temp_var2</b>",
+                "RawTip": "Store <b>null</b> to <b>%temp_var2</b>",
+                "Importance": 100,
+                "FuncKey": "Panel_getSelected",
+                "FuncName": "Panel_getSelected"
+            },
+            {
+                "File": "Panel.c",
+                "Line": 165,
+                "Tip": "Return <b>%temp_var2</b> to caller",
+                "RawTip": "Return <b>%temp_var2</b> to caller",
+                "Importance": 100,
+                "FuncKey": "Panel_getSelected",
+                "FuncName": "Panel_getSelected"
+            },
+            {
+                "File": "DisplayOptionsPanel.c",
+                "Line": 38,
+                "Tip": "Store the return value of function <b>Panel_getSelected</b> to <b>selected</b>",
+                "RawTip": "Store the return value of function <b>Panel_getSelected</b> to <b>selected</b>",
+                "Importance": 100,
+                "FuncKey": "DisplayOptionsPanel_eventHandler",
+                "FuncName": "DisplayOptionsPanel_eventHandler"
+            },
+            {
+                "File": "DisplayOptionsPanel.c",
+                "Line": 67,
+                "Tip": "Load value from <b>selected</b>",
+                "RawTip": "Load value from <b>selected</b>",
+                "Importance": 100,
+                "FuncKey": "DisplayOptionsPanel_eventHandler",
+                "FuncName": "DisplayOptionsPanel_eventHandler"
+            },
+            {
+                "File": "DisplayOptionsPanel.c",
+                "Line": 67,
+                "Tip": "Load value from <b>selected-&gt;super.klass</b>",
+                "RawTip": "Load value from <b>selected-&gt;super.klass</b>",
+                "Importance": 100,
+                "FuncKey": "DisplayOptionsPanel_eventHandler",
+                "FuncName": "DisplayOptionsPanel_eventHandler"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    },
+
+
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "Panel.c",
+                "Line": 163,
+                "Tip": "Store <b>null</b> to <b>%temp_var2</b>",
+                "RawTip": "Store <b>null</b> to <b>%temp_var2</b>",
+                "Importance": 100,
+                "FuncKey": "Panel_getSelected",
+                "FuncName": "Panel_getSelected"
+            },
+            {
+                "File": "Panel.c",
+                "Line": 165,
+                "Tip": "Return <b>%temp_var2</b> to caller",
+                "RawTip": "Return <b>%temp_var2</b> to caller",
+                "Importance": 100,
+                "FuncKey": "Panel_getSelected",
+                "FuncName": "Panel_getSelected"
+            },
+            {
+                "File": "AffinityPanel.c",
+                "Line": 201,
+                "Tip": "Store the return value of function <b>Panel_getSelected</b> to <b>selected</b>",
+                "RawTip": "Store the return value of function <b>Panel_getSelected</b> to <b>selected</b>",
+                "Importance": 100,
+                "FuncKey": "AffinityPanel_eventHandler",
+                "FuncName": "AffinityPanel_eventHandler"
+            },
+            {
+                "File": "AffinityPanel.c",
+                "Line": 220,
+                "Tip": "Load value from <b>selected</b>",
+                "RawTip": "Load value from <b>selected</b>",
+                "Importance": 100,
+                "FuncKey": "AffinityPanel_eventHandler",
+                "FuncName": "AffinityPanel_eventHandler"
+            },
+            {
+                "File": "AffinityPanel.c",
+                "Line": 220,
+                "Tip": "Store <b>((selected-&gt;value!=0)?0:2)</b> to <b>selected-&gt;value</b>",
+                "RawTip": "Store <b>((selected-&gt;value!=0)?0:2)</b> to <b>selected-&gt;value</b>",
+                "Importance": 100,
+                "FuncKey": "AffinityPanel_eventHandler",
+                "FuncName": "AffinityPanel_eventHandler"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    }
+]

@@ -1,0 +1,85 @@
+{
+    "Dominated": false,
+    "Score": 60,
+    "Valid": true,
+    "Related to Persistence": false,
+    "Bug Type": "NULL Pointer Dereference",
+    "Bug Type Description": "CWE-476",
+    "Importance": "high",
+    "Classification": "security",
+    "DiagSteps": [
+        {
+            "File": "dlls/win32u/ntgdi_private.h",
+            "Line": 119,
+            "Tip": "Store <b>null</b> to <b>%temp_var3</b>",
+            "RawTip": "Store <b>null</b> to <b>%temp_var3</b>",
+            "Importance": 100,
+            "FuncKey": "pop_dc_driver.2533",
+            "FuncName": "pop_dc_driver.2533"
+        },
+        {
+            "File": "dlls/win32u/ntgdi_private.h",
+            "Line": 123,
+            "Tip": "Return <b>%temp_var3</b> to caller",
+            "RawTip": "Return <b>%temp_var3</b> to caller",
+            "Importance": 100,
+            "FuncKey": "pop_dc_driver.2533",
+            "FuncName": "pop_dc_driver.2533"
+        },
+        {
+            "File": "dlls/win32u/path.c",
+            "Line": 750,
+            "Tip": "The return value of function <b>pop_dc_driver</b> is used as the 1st parameter in function <b>path_driver.!96</b> (the return value of function <b>pop_dc_driver</b> can be null)",
+            "RawTip": "The return value of function <b>pop_dc_driver</b> is used as the 1st parameter in function <b>path_driver.!96</b> (the return value of function <b>pop_dc_driver</b> can be null)",
+            "Importance": 100,
+            "FuncKey": "pathdrv_AbortPath",
+            "FuncName": "pathdrv_AbortPath"
+        },
+        {
+            "File": "dlls/win32u/path.c",
+            "Line": 788,
+            "Tip": "<b>dev</b> is used as the 1st parameter in function <b>get_path_physdev</b> (<b>dev</b> can be null)",
+            "RawTip": "<b>dev</b> is used as the 1st parameter in function <b>get_path_physdev</b> (<b>dev</b> can be null)",
+            "Importance": 100,
+            "FuncKey": "pathdrv_DeleteDC",
+            "FuncName": "pathdrv_DeleteDC"
+        },
+        {
+            "File": "dlls/win32u/path.c",
+            "Line": 103,
+            "Tip": "Return <b>(i8*)dev</b> to caller",
+            "RawTip": "Return <b>(i8*)dev</b> to caller",
+            "Importance": 100,
+            "FuncKey": "get_path_physdev",
+            "FuncName": "get_path_physdev"
+        },
+        {
+            "File": "dlls/win32u/path.c",
+            "Line": 788,
+            "Tip": "Store the return value of function <b>get_path_physdev</b> to <b>physdev</b>",
+            "RawTip": "Store the return value of function <b>get_path_physdev</b> to <b>physdev</b>",
+            "Importance": 100,
+            "FuncKey": "pathdrv_DeleteDC",
+            "FuncName": "pathdrv_DeleteDC"
+        },
+        {
+            "File": "dlls/win32u/path.c",
+            "Line": 790,
+            "Tip": "Load value from <b>physdev</b>",
+            "RawTip": "Load value from <b>physdev</b>",
+            "Importance": 100,
+            "FuncKey": "pathdrv_DeleteDC",
+            "FuncName": "pathdrv_DeleteDC"
+        },
+        {
+            "File": "dlls/win32u/path.c",
+            "Line": 790,
+            "Tip": "Load value from <b>physdev-&gt;path</b>",
+            "RawTip": "Load value from <b>physdev-&gt;path</b>",
+            "Importance": 100,
+            "FuncKey": "pathdrv_DeleteDC",
+            "FuncName": "pathdrv_DeleteDC"
+        }
+    ],
+    "ReportChecker": "PSA NULL Pointer Dereference Checker"
+}

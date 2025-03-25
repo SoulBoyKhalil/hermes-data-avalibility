@@ -1,0 +1,75 @@
+[
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "Unchecked Return Value to NULL Pointer Dereference",
+        "Bug Type Description": "CWE-690",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "linux/LinuxProcessTable.c",
+                "Line": 411,
+                "Tip": "Store the return value of function <b>strchr</b> to <b>location</b>",
+                "RawTip": "Store the return value of function <b>strchr</b> to <b>location</b>",
+                "Importance": 100,
+                "FuncKey": "LinuxProcessTable_readStatFile",
+                "FuncName": "LinuxProcessTable_readStatFile"
+            },
+            {
+                "File": "linux/LinuxProcessTable.c",
+                "Line": 413,
+                "Tip": "Store <b>&amp;(location[1])</b> to <b>location</b>",
+                "RawTip": "Store <b>&amp;(location[1])</b> to <b>location</b>",
+                "Importance": 100,
+                "FuncKey": "LinuxProcessTable_readStatFile",
+                "FuncName": "LinuxProcessTable_readStatFile"
+            },
+            {
+                "File": "linux/LinuxProcessTable.c",
+                "Line": 417,
+                "Tip": "<b>location</b> is used as the 1st parameter in function <b>strchr</b> (<b>location</b> can be null)",
+                "RawTip": "<b>location</b> is used as the 1st parameter in function <b>strchr</b> (<b>location</b> can be null)",
+                "Importance": 100,
+                "FuncKey": "LinuxProcessTable_readStatFile",
+                "FuncName": "LinuxProcessTable_readStatFile"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    },
+
+
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "Unchecked Return Value to NULL Pointer Dereference",
+        "Bug Type Description": "CWE-690",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "linux/LinuxProcessTable.c",
+                "Line": 405,
+                "Tip": "Store <b>&amp;(strchr(location,32)[1])</b> to <b>location</b>",
+                "RawTip": "Store <b>&amp;(strchr(location,32)[1])</b> to <b>location</b>",
+                "Importance": 100,
+                "FuncKey": "LinuxProcessTable_readStatFile",
+                "FuncName": "LinuxProcessTable_readStatFile"
+            },
+            {
+                "File": "linux/LinuxProcessTable.c",
+                "Line": 411,
+                "Tip": "<b>location</b> is used as the 1st parameter in function <b>strchr</b> (<b>location</b> can be null)",
+                "RawTip": "<b>location</b> is used as the 1st parameter in function <b>strchr</b> (<b>location</b> can be null)",
+                "Importance": 100,
+                "FuncKey": "LinuxProcessTable_readStatFile",
+                "FuncName": "LinuxProcessTable_readStatFile"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    }
+]
