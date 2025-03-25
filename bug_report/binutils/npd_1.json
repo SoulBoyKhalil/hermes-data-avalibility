@@ -1,0 +1,452 @@
+[
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 4363,
+                "Tip": "Select the false branch at this point (<b>((elf_link_hash_table.591.666.1039.1533.1976*)info-&gt;!35)-&gt;!65==33</b> is false)",
+                "RawTip": "Select the false branch at this point (<b>((elf_link_hash_table.591.666.1039.1533.1976*)info-&gt;!35)-&gt;!65==33</b> is false)",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_reloc_type_class",
+                "FuncName": "elf_x86_64_reloc_type_class"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 4362,
+                "Tip": "Store <b>null</b> to <b>htab</b>",
+                "RawTip": "Store <b>null</b> to <b>htab</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_reloc_type_class",
+                "FuncName": "elf_x86_64_reloc_type_class"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 4365,
+                "Tip": "Load value from <b>htab</b>",
+                "RawTip": "Load value from <b>htab</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_reloc_type_class",
+                "FuncName": "elf_x86_64_reloc_type_class"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 4365,
+                "Tip": "Load value from <b>htab-&gt;!0.!470</b>",
+                "RawTip": "Load value from <b>htab-&gt;!0.!470</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_reloc_type_class",
+                "FuncName": "elf_x86_64_reloc_type_class"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    },
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 4363,
+                "Tip": "Select the false branch at this point (<b>((elf_link_hash_table.2650*)info-&gt;!35)-&gt;!65==33</b> is false)",
+                "RawTip": "Select the false branch at this point (<b>((elf_link_hash_table.2650*)info-&gt;!35)-&gt;!65==33</b> is false)",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_reloc_type_class.3353",
+                "FuncName": "elf_x86_64_reloc_type_class.3353"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 4362,
+                "Tip": "Store <b>null</b> to <b>htab</b>",
+                "RawTip": "Store <b>null</b> to <b>htab</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_reloc_type_class.3353",
+                "FuncName": "elf_x86_64_reloc_type_class.3353"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 4370,
+                "Tip": "Load value from <b>htab</b>",
+                "RawTip": "Load value from <b>htab</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_reloc_type_class.3353",
+                "FuncName": "elf_x86_64_reloc_type_class.3353"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 4370,
+                "Tip": "Load value from <b>htab-&gt;!1948</b>",
+                "RawTip": "Load value from <b>htab-&gt;!1948</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_reloc_type_class.3353",
+                "FuncName": "elf_x86_64_reloc_type_class.3353"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    },
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 4363,
+                "Tip": "Select the false branch at this point (<b>((elf_link_hash_table.1249.1725.2168*)info-&gt;!35)-&gt;!65==33</b> is false)",
+                "RawTip": "Select the false branch at this point (<b>((elf_link_hash_table.1249.1725.2168*)info-&gt;!35)-&gt;!65==33</b> is false)",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_reloc_type_class.3952",
+                "FuncName": "elf_x86_64_reloc_type_class.3952"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 4362,
+                "Tip": "Store <b>null</b> to <b>htab</b>",
+                "RawTip": "Store <b>null</b> to <b>htab</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_reloc_type_class.3952",
+                "FuncName": "elf_x86_64_reloc_type_class.3952"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 4366,
+                "Tip": "Load value from <b>htab</b>",
+                "RawTip": "Load value from <b>htab</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_reloc_type_class.3952",
+                "FuncName": "elf_x86_64_reloc_type_class.3952"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 4366,
+                "Tip": "Load value from <b>htab-&gt;!0.!470</b>",
+                "RawTip": "Load value from <b>htab-&gt;!0.!470</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_reloc_type_class.3952",
+                "FuncName": "elf_x86_64_reloc_type_class.3952"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    },
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 4363,
+                "Tip": "Select the false branch at this point (<b>((elf_link_hash_table.2625.1913.2335*)info-&gt;!35)-&gt;!65==33</b> is false)",
+                "RawTip": "Select the false branch at this point (<b>((elf_link_hash_table.2625.1913.2335*)info-&gt;!35)-&gt;!65==33</b> is false)",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_reloc_type_class.3238",
+                "FuncName": "elf_x86_64_reloc_type_class.3238"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 4362,
+                "Tip": "Store <b>null</b> to <b>htab</b>",
+                "RawTip": "Store <b>null</b> to <b>htab</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_reloc_type_class.3238",
+                "FuncName": "elf_x86_64_reloc_type_class.3238"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 4365,
+                "Tip": "Load value from <b>htab</b>",
+                "RawTip": "Load value from <b>htab</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_reloc_type_class.3238",
+                "FuncName": "elf_x86_64_reloc_type_class.3238"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 4365,
+                "Tip": "Load value from <b>htab-&gt;!0.!470</b>",
+                "RawTip": "Load value from <b>htab-&gt;!0.!470</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_reloc_type_class.3238",
+                "FuncName": "elf_x86_64_reloc_type_class.3238"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    },
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 1504,
+                "Tip": "Select the false branch at this point (<b>((elf_link_hash_table.591.666.1039.1533.1976*)link_info-&gt;!35)-&gt;!65==33</b> is false)",
+                "RawTip": "Select the false branch at this point (<b>((elf_link_hash_table.591.666.1039.1533.1976*)link_info-&gt;!35)-&gt;!65==33</b> is false)",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_convert_load_reloc",
+                "FuncName": "elf_x86_64_convert_load_reloc"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 1504,
+                "Tip": "Store <b>null</b> to <b>htab</b>",
+                "RawTip": "Store <b>null</b> to <b>htab</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_convert_load_reloc",
+                "FuncName": "elf_x86_64_convert_load_reloc"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 1513,
+                "Tip": "Load value from <b>htab</b>",
+                "RawTip": "Load value from <b>htab</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_convert_load_reloc",
+                "FuncName": "elf_x86_64_convert_load_reloc"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 1513,
+                "Tip": "Load value from <b>htab-&gt;!1948</b>",
+                "RawTip": "Load value from <b>htab-&gt;!1948</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_convert_load_reloc",
+                "FuncName": "elf_x86_64_convert_load_reloc"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    },
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 1504,
+                "Tip": "Select the false branch at this point (<b>((elf_link_hash_table.2625.1913.2335*)link_info-&gt;!35)-&gt;!65==33</b> is false)",
+                "RawTip": "Select the false branch at this point (<b>((elf_link_hash_table.2625.1913.2335*)link_info-&gt;!35)-&gt;!65==33</b> is false)",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_convert_load_reloc.3590",
+                "FuncName": "elf_x86_64_convert_load_reloc.3590"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 1504,
+                "Tip": "Store <b>null</b> to <b>htab</b>",
+                "RawTip": "Store <b>null</b> to <b>htab</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_convert_load_reloc.3590",
+                "FuncName": "elf_x86_64_convert_load_reloc.3590"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 1604,
+                "Tip": "Load value from <b>htab</b>",
+                "RawTip": "Load value from <b>htab</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_convert_load_reloc.3590",
+                "FuncName": "elf_x86_64_convert_load_reloc.3590"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 1604,
+                "Tip": "Load value from <b>htab-&gt;!0.!217</b>",
+                "RawTip": "Load value from <b>htab-&gt;!0.!217</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_convert_load_reloc.3590",
+                "FuncName": "elf_x86_64_convert_load_reloc.3590"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    },
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 1037,
+                "Tip": "Select the false branch at this point (<b>((elf_link_hash_table.591.666.1039.1533.1976*)info-&gt;!35)-&gt;!65==33</b> is false)",
+                "RawTip": "Select the false branch at this point (<b>((elf_link_hash_table.591.666.1039.1533.1976*)info-&gt;!35)-&gt;!65==33</b> is false)",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_check_tls_transition",
+                "FuncName": "elf_x86_64_check_tls_transition"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 1037,
+                "Tip": "Store <b>null</b> to <b>htab</b>",
+                "RawTip": "Store <b>null</b> to <b>htab</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_check_tls_transition",
+                "FuncName": "elf_x86_64_check_tls_transition"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 1171,
+                "Tip": "Load value from <b>htab</b>",
+                "RawTip": "Load value from <b>htab</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_check_tls_transition",
+                "FuncName": "elf_x86_64_check_tls_transition"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf64-x86-64.c",
+                "Line": 1171,
+                "Tip": "Load value from <b>htab-&gt;!1948</b>",
+                "RawTip": "Load value from <b>htab-&gt;!1948</b>",
+                "Importance": 100,
+                "FuncKey": "elf_x86_64_check_tls_transition",
+                "FuncName": "elf_x86_64_check_tls_transition"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    },
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf32-i386.c",
+                "Line": 1243,
+                "Tip": "Select the false branch at this point (<b>((elf_link_hash_table.591.666.1039.1533.1976*)link_info-&gt;!35)-&gt;!65==12</b> is false)",
+                "RawTip": "Select the false branch at this point (<b>((elf_link_hash_table.591.666.1039.1533.1976*)link_info-&gt;!35)-&gt;!65==12</b> is false)",
+                "Importance": 100,
+                "FuncKey": "elf_i386_convert_load_reloc",
+                "FuncName": "elf_i386_convert_load_reloc"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf32-i386.c",
+                "Line": 1243,
+                "Tip": "Store <b>null</b> to <b>htab</b>",
+                "RawTip": "Store <b>null</b> to <b>htab</b>",
+                "Importance": 100,
+                "FuncKey": "elf_i386_convert_load_reloc",
+                "FuncName": "elf_i386_convert_load_reloc"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf32-i386.c",
+                "Line": 1383,
+                "Tip": "Load value from <b>htab</b>",
+                "RawTip": "Load value from <b>htab</b>",
+                "Importance": 100,
+                "FuncKey": "elf_i386_convert_load_reloc",
+                "FuncName": "elf_i386_convert_load_reloc"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf32-i386.c",
+                "Line": 1383,
+                "Tip": "Load value from <b>htab-&gt;!0.!217</b>",
+                "RawTip": "Load value from <b>htab-&gt;!0.!217</b>",
+                "Importance": 100,
+                "FuncKey": "elf_i386_convert_load_reloc",
+                "FuncName": "elf_i386_convert_load_reloc"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    },
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf32-i386.c",
+                "Line": 1243,
+                "Tip": "Select the false branch at this point (<b>((elf_link_hash_table.1249.1725.2168*)link_info-&gt;!35)-&gt;!65==12</b> is false)",
+                "RawTip": "Select the false branch at this point (<b>((elf_link_hash_table.1249.1725.2168*)link_info-&gt;!35)-&gt;!65==12</b> is false)",
+                "Importance": 100,
+                "FuncKey": "elf_i386_convert_load_reloc.4513",
+                "FuncName": "elf_i386_convert_load_reloc.4513"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf32-i386.c",
+                "Line": 1243,
+                "Tip": "Store <b>null</b> to <b>htab</b>",
+                "RawTip": "Store <b>null</b> to <b>htab</b>",
+                "Importance": 100,
+                "FuncKey": "elf_i386_convert_load_reloc.4513",
+                "FuncName": "elf_i386_convert_load_reloc.4513"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf32-i386.c",
+                "Line": 1260,
+                "Tip": "<b>&amp;(htab-&gt;!606)</b> is used as the 1st parameter in function <b>bfd_sym_from_r_symndx</b> (<b>&amp;(htab-&gt;!606)</b> can be null)",
+                "RawTip": "<b>&amp;(htab-&gt;!606)</b> is used as the 1st parameter in function <b>bfd_sym_from_r_symndx</b> (<b>&amp;(htab-&gt;!606)</b> can be null)",
+                "Importance": 100,
+                "FuncKey": "elf_i386_convert_load_reloc.4513",
+                "FuncName": "elf_i386_convert_load_reloc.4513"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf.c",
+                "Line": 2571,
+                "Tip": "Load value from <b>cache</b>",
+                "RawTip": "Load value from <b>cache</b>",
+                "Importance": 100,
+                "FuncKey": "bfd_sym_from_r_symndx.4081",
+                "FuncName": "bfd_sym_from_r_symndx.4081"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/bfd/elf.c",
+                "Line": 2571,
+                "Tip": "Load value from <b>cache-&gt;!8[ent]</b>",
+                "RawTip": "Load value from <b>cache-&gt;!8[ent]</b>",
+                "Importance": 100,
+                "FuncKey": "bfd_sym_from_r_symndx.4081",
+                "FuncName": "bfd_sym_from_r_symndx.4081"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    }
+]

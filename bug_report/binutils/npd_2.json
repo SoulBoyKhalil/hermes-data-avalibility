@@ -1,0 +1,100 @@
+[
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/libiberty/cp-demangle.c",
+                "Line": 4595,
+                "Tip": "Store <b>null</b> to <b>op2</b>",
+                "RawTip": "Store <b>null</b> to <b>op2</b>",
+                "Importance": 100,
+                "FuncKey": "d_maybe_print_fold_expression",
+                "FuncName": "d_maybe_print_fold_expression"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/libiberty/cp-demangle.c",
+                "Line": 4633,
+                "Tip": "<b>op2</b> is used as the 3rd parameter in function <b>d_print_subexpr</b> (<b>op2</b> can be null)",
+                "RawTip": "<b>op2</b> is used as the 3rd parameter in function <b>d_print_subexpr</b> (<b>op2</b> can be null)",
+                "Importance": 100,
+                "FuncKey": "d_maybe_print_fold_expression",
+                "FuncName": "d_maybe_print_fold_expression"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/libiberty/cp-demangle.c",
+                "Line": 4512,
+                "Tip": "Load value from <b>dc</b>",
+                "RawTip": "Load value from <b>dc</b>",
+                "Importance": 100,
+                "FuncKey": "d_print_subexpr",
+                "FuncName": "d_print_subexpr"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/libiberty/cp-demangle.c",
+                "Line": 4512,
+                "Tip": "Load value from <b>dc-&gt;!0</b>",
+                "RawTip": "Load value from <b>dc-&gt;!0</b>",
+                "Importance": 100,
+                "FuncKey": "d_print_subexpr",
+                "FuncName": "d_print_subexpr"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    },
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/libiberty/cp-demangle.c",
+                "Line": 4595,
+                "Tip": "Store <b>null</b> to <b>op2</b>",
+                "RawTip": "Store <b>null</b> to <b>op2</b>",
+                "Importance": 100,
+                "FuncKey": "d_maybe_print_fold_expression.6730",
+                "FuncName": "d_maybe_print_fold_expression.6730"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/libiberty/cp-demangle.c",
+                "Line": 4633,
+                "Tip": "<b>op2</b> is used as the 3rd parameter in function <b>d_print_subexpr</b> (<b>op2</b> can be null)",
+                "RawTip": "<b>op2</b> is used as the 3rd parameter in function <b>d_print_subexpr</b> (<b>op2</b> can be null)",
+                "Importance": 100,
+                "FuncKey": "d_maybe_print_fold_expression.6730",
+                "FuncName": "d_maybe_print_fold_expression.6730"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/libiberty/cp-demangle.c",
+                "Line": 4510,
+                "Tip": "Load value from <b>dc</b>",
+                "RawTip": "Load value from <b>dc</b>",
+                "Importance": 100,
+                "FuncKey": "d_print_subexpr.6724",
+                "FuncName": "d_print_subexpr.6724"
+            },
+            {
+                "File": "/share_files/llvm-15/binutils-2.32/libiberty/cp-demangle.c",
+                "Line": 4510,
+                "Tip": "Load value from <b>dc-&gt;!0</b>",
+                "RawTip": "Load value from <b>dc-&gt;!0</b>",
+                "Importance": 100,
+                "FuncKey": "d_print_subexpr.6724",
+                "FuncName": "d_print_subexpr.6724"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    }
+]

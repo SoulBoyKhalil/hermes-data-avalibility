@@ -28,18 +28,18 @@
 | git       | NPD       | [git_npd_2](bug_report/git/git_npd_2.png)    | [git_npd_2](bug_report/git/git_npd_2.png)             | confirmed | 1                 |
 | git       | NPD       | [git_npd_3](bug_report/git/git_npd_3.png)    | [git_npd_3](bug_report/git/git_npd_3.png)             | confirmed | 1                 |
 | git       | ML        | [git_ml_1](bug_report/git/git_ml_1.png)      | [git_ml_1](bug_report/git/git_ml_1.png)               | confirmed | 1                 |
-| binuitils | NPD       |                                              | https://sourceware.org/bugzilla/show_bug.cgi?id=30951 | confirmed | 1                 |
-| binuitils | NPD       |                                              | https://sourceware.org/bugzilla/show_bug.cgi?id=32707 | confirmed | 9                 |
-| binuitils | NPD       |                                              | https://sourceware.org/bugzilla/show_bug.cgi?id=30949 | confirmed | 1                 |
-| binuitils | NPD       |                                              | https://sourceware.org/bugzilla/show_bug.cgi?id=32698 | confirmed | 1                 |
-| binuitils | NPD       |                                              | https://sourceware.org/bugzilla/show_bug.cgi?id=32699 | deny      | 2                 |
-| binuitils | NPD       |                                              | https://sourceware.org/bugzilla/show_bug.cgi?id=32702 | deny      | 1                 |
-| binuitils | NPD       |                                              | https://sourceware.org/bugzilla/show_bug.cgi?id=32703 | confirmed | 1                 |
-| binuitils | NPD       |                                              | https://sourceware.org/bugzilla/show_bug.cgi?id=32710 | confirmed | 1                 |
-| mariaDB   | NPD       |                                              | https://jira.mariadb.org/browse/MDEV-36070            | deny      | 2                 |
-| mariaDB   | NPD       |                                              | https://jira.mariadb.org/browse/MDEV-29643            | confirmed | 1                 |
-| mariaDB   | NPD       |                                              | https://jira.mariadb.org/browse/MDEV-29644            | confirmed | 1                 |
-| mariaDB   | NPD       |                                              | https://jira.mariadb.org/browse/MDEV-29881            | confirmed | 1                 |
+| binutils  | NPD       | https://sourceware.org/bugzilla/show_bug.cgi?id=30951      | https://sourceware.org/bugzilla/show_bug.cgi?id=30951 | confirmed | 1                 |
+| binutils  | NPD       | [binutils_npd_32707](bug_report/binutils/npd_1.json)           | https://sourceware.org/bugzilla/show_bug.cgi?id=32707 | confirmed | 9                 |
+| binutils  | NPD       | https://sourceware.org/bugzilla/show_bug.cgi?id=30949      | https://sourceware.org/bugzilla/show_bug.cgi?id=30949 | confirmed | 1                 |
+| binutils  | NPD       | https://sourceware.org/bugzilla/show_bug.cgi?id=32698      | https://sourceware.org/bugzilla/show_bug.cgi?id=32698 | confirmed | 1                 |
+| binutils  | NPD       | [binutils_npd_32699](bug_report/binutils/npd_2.json)      | https://sourceware.org/bugzilla/show_bug.cgi?id=32699 | deny      | 2                 |
+| binutils  | NPD       | https://sourceware.org/bugzilla/show_bug.cgi?id=32702      | https://sourceware.org/bugzilla/show_bug.cgi?id=32702 | deny      | 1                 |
+| binutils  | NPD       | https://sourceware.org/bugzilla/show_bug.cgi?id=32703      | https://sourceware.org/bugzilla/show_bug.cgi?id=32703 | confirmed | 1                 |
+| binutils  | NPD       | https://sourceware.org/bugzilla/show_bug.cgi?id=32710      | https://sourceware.org/bugzilla/show_bug.cgi?id=32710 | confirmed | 1                 |
+| mariaDB   | NPD       | [mariaDB_npd_36070](bug_report/mariaDB/npd_1.json)       | https://jira.mariadb.org/browse/MDEV-36070            | deny      | 2                 |
+| mariaDB   | NPD       | https://jira.mariadb.org/browse/MDEV-29643      | https://jira.mariadb.org/browse/MDEV-29643            | confirmed | 1                 |
+| mariaDB   | NPD       | https://jira.mariadb.org/browse/MDEV-29644      | https://jira.mariadb.org/browse/MDEV-29644            | confirmed | 1                 |
+| mariaDB   | NPD       | https://jira.mariadb.org/browse/MDEV-29881      | https://jira.mariadb.org/browse/MDEV-29881            | confirmed | 1                 |
 | wine      | NPD       | [wine_npd_57929](bug_report/wine/1.json)                                             | https://bugs.winehq.org/show_bug.cgi?id=57929         | deny      | 1                 |
 | wine      | NPD       | [wine_npd_57928](bug_report/wine/2.json)                                             | https://bugs.winehq.org/show_bug.cgi?id=57928         |           | 3                 |
 

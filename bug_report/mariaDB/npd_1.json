@@ -1,0 +1,121 @@
+[
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "/share_files/llvm-15/mariadb-10.6.4/storage/mroonga/vendor/groonga/lib/time.c",
+                "Line": 119,
+                "Tip": "Store <b>null</b> to <b>%temp_var4</b>",
+                "RawTip": "Store <b>null</b> to <b>%temp_var4</b>",
+                "Importance": 100,
+                "FuncKey": "grn_timeval2tm",
+                "FuncName": "grn_timeval2tm"
+            },
+            {
+                "File": "/share_files/llvm-15/mariadb-10.6.4/storage/mroonga/vendor/groonga/lib/time.c",
+                "Line": 121,
+                "Tip": "Return <b>%temp_var4</b> to caller",
+                "RawTip": "Return <b>%temp_var4</b> to caller",
+                "Importance": 100,
+                "FuncKey": "grn_timeval2tm",
+                "FuncName": "grn_timeval2tm"
+            },
+            {
+                "File": "/share_files/llvm-15/mariadb-10.6.4/storage/mroonga/vendor/groonga/lib/logger.c",
+                "Line": 116,
+                "Tip": "Store the return value of function <b>grn_timeval2tm</b> to <b>tm</b>",
+                "RawTip": "Store the return value of function <b>grn_timeval2tm</b> to <b>tm</b>",
+                "Importance": 100,
+                "FuncKey": "rotate_log_file",
+                "FuncName": "rotate_log_file"
+            },
+            {
+                "File": "/share_files/llvm-15/mariadb-10.6.4/storage/mroonga/vendor/groonga/lib/logger.c",
+                "Line": 117,
+                "Tip": "Load value from <b>tm</b>",
+                "RawTip": "Load value from <b>tm</b>",
+                "Importance": 100,
+                "FuncKey": "rotate_log_file",
+                "FuncName": "rotate_log_file"
+            },
+            {
+                "File": "/share_files/llvm-15/mariadb-10.6.4/storage/mroonga/vendor/groonga/lib/logger.c",
+                "Line": 117,
+                "Tip": "Load value from <b>tm-&gt;tm_min</b>",
+                "RawTip": "Load value from <b>tm-&gt;tm_min</b>",
+                "Importance": 100,
+                "FuncKey": "rotate_log_file",
+                "FuncName": "rotate_log_file"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    },
+
+
+    
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "/share_files/llvm-15/mariadb-10.6.4/storage/mroonga/vendor/groonga/lib/time.c",
+                "Line": 119,
+                "Tip": "Store <b>null</b> to <b>%temp_var4</b>",
+                "RawTip": "Store <b>null</b> to <b>%temp_var4</b>",
+                "Importance": 100,
+                "FuncKey": "grn_timeval2tm",
+                "FuncName": "grn_timeval2tm"
+            },
+            {
+                "File": "/share_files/llvm-15/mariadb-10.6.4/storage/mroonga/vendor/groonga/lib/time.c",
+                "Line": 121,
+                "Tip": "Return <b>%temp_var4</b> to caller",
+                "RawTip": "Return <b>%temp_var4</b> to caller",
+                "Importance": 100,
+                "FuncKey": "grn_timeval2tm",
+                "FuncName": "grn_timeval2tm"
+            },
+            {
+                "File": "/share_files/llvm-15/mariadb-10.6.4/storage/mroonga/vendor/groonga/lib/time.c",
+                "Line": 177,
+                "Tip": "Store the return value of function <b>grn_timeval2tm</b> to <b>ltm</b>",
+                "RawTip": "Store the return value of function <b>grn_timeval2tm</b> to <b>ltm</b>",
+                "Importance": 100,
+                "FuncKey": "grn_timeval2str",
+                "FuncName": "grn_timeval2str"
+            },
+            {
+                "File": "/share_files/llvm-15/mariadb-10.6.4/storage/mroonga/vendor/groonga/lib/time.c",
+                "Line": 178,
+                "Tip": "Load value from <b>ltm</b>",
+                "RawTip": "Load value from <b>ltm</b>",
+                "Importance": 100,
+                "FuncKey": "grn_timeval2str",
+                "FuncName": "grn_timeval2str"
+            },
+            {
+                "File": "/share_files/llvm-15/mariadb-10.6.4/storage/mroonga/vendor/groonga/lib/time.c",
+                "Line": 178,
+                "Tip": "Load value from <b>ltm-&gt;tm_sec</b>",
+                "RawTip": "Load value from <b>ltm-&gt;tm_sec</b>",
+                "Importance": 100,
+                "FuncKey": "grn_timeval2str",
+                "FuncName": "grn_timeval2str"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    }
+]
