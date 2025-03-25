@@ -1,0 +1,121 @@
+[
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "/share_files/llvm-15/ppsspp/ext/SPIRV-Cross/spirv_cross.hpp",
+                "Line": 549,
+                "Tip": "Store <b>null</b> to <b>%temp_var3</b>",
+                "RawTip": "Store <b>null</b> to <b>%temp_var3</b>",
+                "Importance": 100,
+                "FuncKey": "_ZNK11spirv_cross8Compiler6streamERKNS_11InstructionE",
+                "FuncName": "spirv_cross::Compiler::stream"
+            },
+            {
+                "File": "/share_files/llvm-15/ppsspp/ext/SPIRV-Cross/spirv_cross.hpp",
+                "Line": 563,
+                "Tip": "Return <b>%temp_var3</b> to caller",
+                "RawTip": "Return <b>%temp_var3</b> to caller",
+                "Importance": 100,
+                "FuncKey": "_ZNK11spirv_cross8Compiler6streamERKNS_11InstructionE",
+                "FuncName": "spirv_cross::Compiler::stream"
+            },
+            {
+                "File": "/share_files/llvm-15/ppsspp/ext/SPIRV-Cross/spirv_hlsl.cpp",
+                "Line": 4906,
+                "Tip": "Store the return value of function <b>stream</b> to <b>ops</b>",
+                "RawTip": "Store the return value of function <b>stream</b> to <b>ops</b>",
+                "Importance": 100,
+                "FuncKey": "_ZN11spirv_cross12CompilerHLSL10emit_storeERKNS_11InstructionE",
+                "FuncName": "spirv_cross::CompilerHLSL::emit_store"
+            },
+            {
+                "File": "/share_files/llvm-15/ppsspp/ext/SPIRV-Cross/spirv_hlsl.cpp",
+                "Line": 4907,
+                "Tip": "Load value from <b>ops</b>",
+                "RawTip": "Load value from <b>ops</b>",
+                "Importance": 100,
+                "FuncKey": "_ZN11spirv_cross12CompilerHLSL10emit_storeERKNS_11InstructionE",
+                "FuncName": "spirv_cross::CompilerHLSL::emit_store"
+            },
+            {
+                "File": "/share_files/llvm-15/ppsspp/ext/SPIRV-Cross/spirv_hlsl.cpp",
+                "Line": 4907,
+                "Tip": "Load value from <b>*(ops)</b>",
+                "RawTip": "Load value from <b>*(ops)</b>",
+                "Importance": 100,
+                "FuncKey": "_ZN11spirv_cross12CompilerHLSL10emit_storeERKNS_11InstructionE",
+                "FuncName": "spirv_cross::CompilerHLSL::emit_store"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    },
+
+
+
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "/share_files/llvm-15/ppsspp/ext/SPIRV-Cross/spirv_cross.hpp",
+                "Line": 549,
+                "Tip": "Store <b>null</b> to <b>%temp_var3</b>",
+                "RawTip": "Store <b>null</b> to <b>%temp_var3</b>",
+                "Importance": 100,
+                "FuncKey": "_ZNK11spirv_cross8Compiler6streamERKNS_11InstructionE",
+                "FuncName": "spirv_cross::Compiler::stream"
+            },
+            {
+                "File": "/share_files/llvm-15/ppsspp/ext/SPIRV-Cross/spirv_cross.hpp",
+                "Line": 563,
+                "Tip": "Return <b>%temp_var3</b> to caller",
+                "RawTip": "Return <b>%temp_var3</b> to caller",
+                "Importance": 100,
+                "FuncKey": "_ZNK11spirv_cross8Compiler6streamERKNS_11InstructionE",
+                "FuncName": "spirv_cross::Compiler::stream"
+            },
+            {
+                "File": "/share_files/llvm-15/ppsspp/ext/SPIRV-Cross/spirv_msl.cpp",
+                "Line": 9341,
+                "Tip": "Store the return value of function <b>stream</b> to <b>ops</b>",
+                "RawTip": "Store the return value of function <b>stream</b> to <b>ops</b>",
+                "Importance": 100,
+                "FuncKey": "_ZN11spirv_cross11CompilerMSL15emit_texture_opERKNS_11InstructionEb",
+                "FuncName": "spirv_cross::CompilerMSL::emit_texture_op"
+            },
+            {
+                "File": "/share_files/llvm-15/ppsspp/ext/SPIRV-Cross/spirv_msl.cpp",
+                "Line": 9343,
+                "Tip": "Load value from <b>ops</b>",
+                "RawTip": "Load value from <b>ops</b>",
+                "Importance": 100,
+                "FuncKey": "_ZN11spirv_cross11CompilerMSL15emit_texture_opERKNS_11InstructionEb",
+                "FuncName": "spirv_cross::CompilerMSL::emit_texture_op"
+            },
+            {
+                "File": "/share_files/llvm-15/ppsspp/ext/SPIRV-Cross/spirv_msl.cpp",
+                "Line": 9343,
+                "Tip": "Load value from <b>*(ops)</b>",
+                "RawTip": "Load value from <b>*(ops)</b>",
+                "Importance": 100,
+                "FuncKey": "_ZN11spirv_cross11CompilerMSL15emit_texture_opERKNS_11InstructionEb",
+                "FuncName": "spirv_cross::CompilerMSL::emit_texture_op"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    }
+]

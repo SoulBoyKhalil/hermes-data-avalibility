@@ -1,0 +1,112 @@
+{
+    "Dominated": false,
+    "Score": 60,
+    "Valid": true,
+    "Related to Persistence": false,
+    "Bug Type": "NULL Pointer Dereference",
+    "Bug Type Description": "CWE-476",
+    "Importance": "high",
+    "Classification": "security",
+    "DiagSteps": [
+        {
+            "File": "common/cisco_eeprom.c",
+            "Line": 570,
+            "Tip": "Store <b>null</b> to <b>eeprom-&gt;data</b>",
+            "RawTip": "Store <b>null</b> to <b>eeprom-&gt;data</b>",
+            "Importance": 100,
+            "FuncKey": "cisco_eeprom_free",
+            "FuncName": "cisco_eeprom_free"
+        },
+        {
+            "File": "common/cisco_eeprom.c",
+            "Line": 573,
+            "Tip": "Return to caller",
+            "RawTip": "Return to caller",
+            "Importance": 100,
+            "FuncKey": "cisco_eeprom_free",
+            "FuncName": "cisco_eeprom_free"
+        },
+        {
+            "File": "common/cisco_eeprom.c",
+            "Line": 553,
+            "Tip": "Function <b>cisco_eeprom_free</b> executes and returns",
+            "RawTip": "Function <b>cisco_eeprom_free</b> executes and returns",
+            "Importance": 100,
+            "FuncKey": "cisco_eeprom_copy",
+            "FuncName": "cisco_eeprom_copy"
+        },
+        {
+            "File": "common/cisco_eeprom.c",
+            "Line": 563,
+            "Tip": "Return to caller",
+            "RawTip": "Return to caller",
+            "Importance": 100,
+            "FuncKey": "cisco_eeprom_copy",
+            "FuncName": "cisco_eeprom_copy"
+        },
+        {
+            "File": "common/cisco_card.c",
+            "Line": 44,
+            "Tip": "Function <b>cisco_eeprom_copy</b> executes and returns",
+            "RawTip": "Function <b>cisco_eeprom_copy</b> executes and returns",
+            "Importance": 100,
+            "FuncKey": "cisco_card_set_eeprom",
+            "FuncName": "cisco_card_set_eeprom"
+        },
+        {
+            "File": "common/cisco_card.c",
+            "Line": 50,
+            "Tip": "Return to caller",
+            "RawTip": "Return to caller",
+            "Importance": 100,
+            "FuncKey": "cisco_card_set_eeprom",
+            "FuncName": "cisco_card_set_eeprom"
+        },
+        {
+            "File": "common/dev_c3745_eth.c",
+            "Line": 162,
+            "Tip": "Function <b>cisco_card_set_eeprom</b> executes and returns",
+            "RawTip": "Function <b>cisco_card_set_eeprom</b> executes and returns",
+            "Importance": 100,
+            "FuncKey": "dev_c3745_nm_16esw_init",
+            "FuncName": "dev_c3745_nm_16esw_init"
+        },
+        {
+            "File": "common/dev_c3745_eth.c",
+            "Line": 163,
+            "Tip": "The value <b><b>card-&gt;eeprom</b>-&gt;data</b> is passed to function <b>dev_nm_16esw_burn_mac_addr</b>, where <b>card-&gt;eeprom</b> is the 3rd parameter (<b><b>card-&gt;eeprom</b>-&gt;data</b> can be null)",
+            "RawTip": "The value <b><b>card-&gt;eeprom</b>-&gt;data</b> is passed to function <b>dev_nm_16esw_burn_mac_addr</b>, where <b>card-&gt;eeprom</b> is the 3rd parameter (<b><b>card-&gt;eeprom</b>-&gt;data</b> can be null)",
+            "Importance": 100,
+            "FuncKey": "dev_c3745_nm_16esw_init",
+            "FuncName": "dev_c3745_nm_16esw_init"
+        },
+        {
+            "File": "common/dev_nm_16esw.c",
+            "Line": 2453,
+            "Tip": "The value <b><b>eeprom</b>-&gt;data</b> is passed to function <b>cisco_eeprom_get_byte</b>, where <b>eeprom</b> is the 1st parameter (<b><b>eeprom</b>-&gt;data</b> can be null)",
+            "RawTip": "The value <b><b>eeprom</b>-&gt;data</b> is passed to function <b>cisco_eeprom_get_byte</b>, where <b>eeprom</b> is the 1st parameter (<b><b>eeprom</b>-&gt;data</b> can be null)",
+            "Importance": 100,
+            "FuncKey": "dev_nm_16esw_burn_mac_addr",
+            "FuncName": "dev_nm_16esw_burn_mac_addr"
+        },
+        {
+            "File": "common/cisco_eeprom.c",
+            "Line": 592,
+            "Tip": "Load value from <b>eeprom-&gt;data</b>",
+            "RawTip": "Load value from <b>eeprom-&gt;data</b>",
+            "Importance": 100,
+            "FuncKey": "cisco_eeprom_get_byte",
+            "FuncName": "cisco_eeprom_get_byte"
+        },
+        {
+            "File": "common/cisco_eeprom.c",
+            "Line": 592,
+            "Tip": "Load value from <b>eeprom-&gt;data[offset&gt;&gt;1]</b>",
+            "RawTip": "Load value from <b>eeprom-&gt;data[offset&gt;&gt;1]</b>",
+            "Importance": 100,
+            "FuncKey": "cisco_eeprom_get_byte",
+            "FuncName": "cisco_eeprom_get_byte"
+        }
+    ],
+    "ReportChecker": "PSA NULL Pointer Dereference Checker"
+}

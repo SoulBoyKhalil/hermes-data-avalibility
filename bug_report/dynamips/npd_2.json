@@ -1,0 +1,111 @@
+[
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "Unchecked Return Value to NULL Pointer Dereference",
+        "Bug Type Description": "CWE-690",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "common/pci_dev.c",
+                "Line": 398,
+                "Tip": "Store the allocated memory to <b>d-&gt;name</b> (lacking failure check, 169 out of 220 memory allocations checked failures)",
+                "RawTip": "Store the allocated memory to <b>d-&gt;name</b> (lacking failure check, 169 out of 220 memory allocations checked failures)",
+                "Importance": 100,
+                "FuncKey": "pci_bus_create",
+                "FuncName": "pci_bus_create"
+            },
+            {
+                "File": "common/pci_dev.c",
+                "Line": 401,
+                "Tip": "Return to caller",
+                "RawTip": "Return to caller",
+                "Importance": 100,
+                "FuncKey": "pci_bus_create",
+                "FuncName": "pci_bus_create"
+            },
+            {
+                "File": "common/dev_c6msfc1.c",
+                "Line": 325,
+                "Tip": "Function <b>pci_bus_create</b> executes and returns",
+                "RawTip": "Function <b>pci_bus_create</b> executes and returns",
+                "Importance": 100,
+                "FuncKey": "c6msfc1_init_gt64010",
+                "FuncName": "c6msfc1_init_gt64010"
+            },
+            {
+                "File": "common/dev_c6msfc1.c",
+                "Line": 330,
+                "Tip": "The value <b><b>vm</b>-&gt;pci_bus-&gt;name</b> is passed to function <b>dev_gt64010_init</b>, where <b>vm</b> is the 1st parameter (<b><b>vm</b>-&gt;pci_bus-&gt;name</b> can be null)",
+                "RawTip": "The value <b><b>vm</b>-&gt;pci_bus-&gt;name</b> is passed to function <b>dev_gt64010_init</b>, where <b>vm</b> is the 1st parameter (<b><b>vm</b>-&gt;pci_bus-&gt;name</b> can be null)",
+                "Importance": 100,
+                "FuncKey": "c6msfc1_init_gt64010",
+                "FuncName": "c6msfc1_init_gt64010"
+            },
+            {
+                "File": "common/dev_gt.c",
+                "Line": 2660,
+                "Tip": "The value <b><b>d-&gt;bus[0]</b>-&gt;name</b> is passed to function <b>pci_dev_add</b>, where <b>d-&gt;bus[0]</b> is the 1st parameter (<b><b>d-&gt;bus[0]</b>-&gt;name</b> can be null)",
+                "RawTip": "The value <b><b>d-&gt;bus[0]</b>-&gt;name</b> is passed to function <b>pci_dev_add</b>, where <b>d-&gt;bus[0]</b> is the 1st parameter (<b><b>d-&gt;bus[0]</b>-&gt;name</b> can be null)",
+                "Importance": 100,
+                "FuncKey": "dev_gt64010_init",
+                "FuncName": "dev_gt64010_init"
+            },
+            {
+                "File": "common/pci_dev.c",
+                "Line": 290,
+                "Tip": "Load value from <b>pci_bus-&gt;name</b>",
+                "RawTip": "Load value from <b>pci_bus-&gt;name</b>",
+                "Importance": 100,
+                "FuncKey": "pci_dev_add",
+                "FuncName": "pci_dev_add"
+            },
+            {
+                "File": "common/pci_dev.c",
+                "Line": 288,
+                "Tip": "<b>pci_bus-&gt;name</b> is passed to function <b>fprintf</b> as a variadic argument (<b>pci_bus-&gt;name</b> can be null)",
+                "RawTip": "<b>pci_bus-&gt;name</b> is passed to function <b>fprintf</b> as a variadic argument (<b>pci_bus-&gt;name</b> can be null)",
+                "Importance": 100,
+                "FuncKey": "pci_dev_add",
+                "FuncName": "pci_dev_add"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    },
+
+
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "Unchecked Return Value to NULL Pointer Dereference",
+        "Bug Type Description": "CWE-690",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "common/dynamips.c",
+                "Line": 837,
+                "Tip": "Store the allocated memory to <b>console_binding_addr</b> (lacking failure check, 169 out of 220 memory allocations checked failures)",
+                "RawTip": "Store the allocated memory to <b>console_binding_addr</b> (lacking failure check, 169 out of 220 memory allocations checked failures)",
+                "Importance": 100,
+                "FuncKey": "run_hypervisor",
+                "FuncName": "run_hypervisor"
+            },
+            {
+                "File": "common/dynamips.c",
+                "Line": 838,
+                "Tip": "<b>console_binding_addr</b> is passed to function <b>printf</b> as a variadic argument (<b>console_binding_addr</b> can be null)",
+                "RawTip": "<b>console_binding_addr</b> is passed to function <b>printf</b> as a variadic argument (<b>console_binding_addr</b> can be null)",
+                "Importance": 100,
+                "FuncKey": "run_hypervisor",
+                "FuncName": "run_hypervisor"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    }
+]

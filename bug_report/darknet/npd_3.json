@@ -1,0 +1,49 @@
+{
+    "Dominated": false,
+    "Score": 60,
+    "Valid": true,
+    "Related to Persistence": false,
+    "Bug Type": "NULL Pointer Dereference",
+    "Bug Type Description": "CWE-476",
+    "Importance": "high",
+    "Classification": "security",
+    "DiagSteps": [
+        {
+            "File": "src/utils.c",
+            "Line": 560,
+            "Tip": "Store <b>null</b> to <b>%temp_var2</b>",
+            "RawTip": "Store <b>null</b> to <b>%temp_var2</b>",
+            "Importance": 100,
+            "FuncKey": "copy_string",
+            "FuncName": "copy_string"
+        },
+        {
+            "File": "src/utils.c",
+            "Line": 565,
+            "Tip": "Return <b>%temp_var2</b> to caller",
+            "RawTip": "Return <b>%temp_var2</b> to caller",
+            "Importance": 100,
+            "FuncKey": "copy_string",
+            "FuncName": "copy_string"
+        },
+        {
+            "File": "src/utils.c",
+            "Line": 178,
+            "Tip": "Store the return value of function <b>copy_string</b> to <b>c</b>",
+            "RawTip": "Store the return value of function <b>copy_string</b> to <b>c</b>",
+            "Importance": 100,
+            "FuncKey": "basecfg",
+            "FuncName": "basecfg"
+        },
+        {
+            "File": "src/utils.c",
+            "Line": 179,
+            "Tip": "<b>c</b> is used as the 1st parameter in function <b>strchr</b> (<b>c</b> can be null)",
+            "RawTip": "<b>c</b> is used as the 1st parameter in function <b>strchr</b> (<b>c</b> can be null)",
+            "Importance": 100,
+            "FuncKey": "basecfg",
+            "FuncName": "basecfg"
+        }
+    ],
+    "ReportChecker": "PSA NULL Pointer Dereference Checker"
+}

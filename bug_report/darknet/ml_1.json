@@ -1,0 +1,118 @@
+[
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "Memory Leak",
+        "Bug Type Description": "CWE-401",
+        "Importance": "high",
+        "Classification": "performance",
+        "DiagSteps": [
+            {
+                "File": "src/utils.c",
+                "Line": 38,
+                "Tip": "Store the allocated memory to <b>ptr</b>",
+                "RawTip": "Store the allocated memory to <b>ptr</b>",
+                "Importance": 100,
+                "FuncKey": "xcalloc_location",
+                "FuncName": "xcalloc_location"
+            },
+            {
+                "File": "src/network.c",
+                "Line": 532,
+                "Tip": "Store the return value of function <b>xcalloc_location</b> to <b>net-&gt;workspace</b>",
+                "RawTip": "Store the return value of function <b>xcalloc_location</b> to <b>net-&gt;workspace</b>",
+                "Importance": 100,
+                "FuncKey": "recalculate_workspace_size",
+                "FuncName": "recalculate_workspace_size"
+            },
+            {
+                "File": "src/network.c",
+                "Line": 555,
+                "Tip": "Function <b>recalculate_workspace_size</b> executes and returns",
+                "RawTip": "Function <b>recalculate_workspace_size</b> executes and returns",
+                "Importance": 100,
+                "FuncKey": "set_batch_network",
+                "FuncName": "set_batch_network"
+            },
+            {
+                "File": "src/network.c",
+                "Line": 556,
+                "Tip": "Return to caller",
+                "RawTip": "Return to caller",
+                "Importance": 100,
+                "FuncKey": "set_batch_network",
+                "FuncName": "set_batch_network"
+            },
+            {
+                "File": "src/darknet.c",
+                "Line": 95,
+                "Tip": "Function <b>set_batch_network</b> executes and returns",
+                "RawTip": "Function <b>set_batch_network</b> executes and returns",
+                "Importance": 100,
+                "FuncKey": "speed",
+                "FuncName": "speed"
+            },
+            {
+                "File": "src/darknet.c",
+                "Line": 99,
+                "Tip": "Select the true branch at this point (<b>i&lt;tics</b> is true)",
+                "RawTip": "Select the true branch at this point (<b>i&lt;tics</b> is true)",
+                "Importance": 100,
+                "FuncKey": "speed",
+                "FuncName": "speed"
+            },
+            {
+                "File": "src/darknet.c",
+                "Line": 99,
+                "Tip": "Select the false branch at this point (<b>i&lt;tics</b> is false), the allocated memory is leaked",
+                "RawTip": "Select the false branch at this point (<b>i&lt;tics</b> is false), the allocated memory is leaked",
+                "Importance": 100,
+                "FuncKey": "speed",
+                "FuncName": "speed"
+            }
+        ],
+        "ReportChecker": "PSA Memory Leak Checker"
+    },
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "Memory Leak",
+        "Bug Type Description": "CWE-401",
+        "Importance": "high",
+        "Classification": "performance",
+        "DiagSteps": [
+            {
+                "File": "src/utils.c",
+                "Line": 38,
+                "Tip": "Store the allocated memory to <b>ptr</b>",
+                "RawTip": "Store the allocated memory to <b>ptr</b>",
+                "Importance": 100,
+                "FuncKey": "xcalloc_location",
+                "FuncName": "xcalloc_location"
+            },
+            {
+                "File": "src/data.c",
+                "Line": 822,
+                "Tip": "Store the return value of function <b>xcalloc_location</b> to <b>d-&gt;X.vals</b>",
+                "RawTip": "Store the return value of function <b>xcalloc_location</b> to <b>d-&gt;X.vals</b>",
+                "Importance": 100,
+                "FuncKey": "load_data_swag",
+                "FuncName": "load_data_swag"
+            },
+            {
+                "File": "src/data.c",
+                "Line": 1588,
+                "Tip": "Function <b>load_data_swag</b> executes and returns, the allocated memory is leaked",
+                "RawTip": "Function <b>load_data_swag</b> executes and returns, the allocated memory is leaked",
+                "Importance": 100,
+                "FuncKey": "load_thread",
+                "FuncName": "load_thread"
+            }
+        ],
+        "ReportChecker": "PSA Memory Leak Checker"
+    }
+]

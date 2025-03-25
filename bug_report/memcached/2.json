@@ -1,0 +1,181 @@
+[
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "cache.c",
+                "Line": 91,
+                "Tip": "Store <b>null</b> to <b>object</b>",
+                "RawTip": "Store <b>null</b> to <b>object</b>",
+                "Importance": 100,
+                "FuncKey": "do_cache_alloc",
+                "FuncName": "do_cache_alloc"
+            },
+            {
+                "File": "cache.c",
+                "Line": 105,
+                "Tip": "Return <b>object</b> to caller",
+                "RawTip": "Return <b>object</b> to caller",
+                "Importance": 100,
+                "FuncKey": "do_cache_alloc",
+                "FuncName": "do_cache_alloc"
+            },
+            {
+                "File": "cache.c",
+                "Line": 70,
+                "Tip": "Store the return value of function <b>do_cache_alloc</b> to <b>ret</b>",
+                "RawTip": "Store the return value of function <b>do_cache_alloc</b> to <b>ret</b>",
+                "Importance": 100,
+                "FuncKey": "cache_alloc",
+                "FuncName": "cache_alloc"
+            },
+            {
+                "File": "cache.c",
+                "Line": 72,
+                "Tip": "Return <b>ret</b> to caller",
+                "RawTip": "Return <b>ret</b> to caller",
+                "Importance": 100,
+                "FuncKey": "cache_alloc",
+                "FuncName": "cache_alloc"
+            },
+            {
+                "File": "testapp.c",
+                "Line": 174,
+                "Tip": "Store the return value of function <b>cache_alloc</b> to <b>p</b>",
+                "RawTip": "Store the return value of function <b>cache_alloc</b> to <b>p</b>",
+                "Importance": 100,
+                "FuncKey": "cache_redzone_test",
+                "FuncName": "cache_redzone_test"
+            },
+            {
+                "File": "testapp.c",
+                "Line": 175,
+                "Tip": "Load value from <b>p</b>",
+                "RawTip": "Load value from <b>p</b>",
+                "Importance": 100,
+                "FuncKey": "cache_redzone_test",
+                "FuncName": "cache_redzone_test"
+            },
+            {
+                "File": "testapp.c",
+                "Line": 175,
+                "Tip": "Load value from <b>p[-1]</b>",
+                "RawTip": "Load value from <b>p[-1]</b>",
+                "Importance": 100,
+                "FuncKey": "cache_redzone_test",
+                "FuncName": "cache_redzone_test"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    },
+    {
+        "Dominated": false,
+        "Score": 60,
+        "Valid": true,
+        "Related to Persistence": false,
+        "Bug Type": "NULL Pointer Dereference",
+        "Bug Type Description": "CWE-476",
+        "Importance": "high",
+        "Classification": "security",
+        "DiagSteps": [
+            {
+                "File": "cache.c",
+                "Line": 91,
+                "Tip": "Store <b>null</b> to <b>object</b>",
+                "RawTip": "Store <b>null</b> to <b>object</b>",
+                "Importance": 100,
+                "FuncKey": "do_cache_alloc",
+                "FuncName": "do_cache_alloc"
+            },
+            {
+                "File": "cache.c",
+                "Line": 105,
+                "Tip": "Return <b>object</b> to caller",
+                "RawTip": "Return <b>object</b> to caller",
+                "Importance": 100,
+                "FuncKey": "do_cache_alloc",
+                "FuncName": "do_cache_alloc"
+            },
+            {
+                "File": "cache.c",
+                "Line": 70,
+                "Tip": "Store the return value of function <b>do_cache_alloc</b> to <b>ret</b>",
+                "RawTip": "Store the return value of function <b>do_cache_alloc</b> to <b>ret</b>",
+                "Importance": 100,
+                "FuncKey": "cache_alloc",
+                "FuncName": "cache_alloc"
+            },
+            {
+                "File": "cache.c",
+                "Line": 72,
+                "Tip": "Return <b>ret</b> to caller",
+                "RawTip": "Return <b>ret</b> to caller",
+                "Importance": 100,
+                "FuncKey": "cache_alloc",
+                "FuncName": "cache_alloc"
+            },
+            {
+                "File": "testapp.c",
+                "Line": 174,
+                "Tip": "Store the return value of function <b>cache_alloc</b> to <b>p</b>",
+                "RawTip": "Store the return value of function <b>cache_alloc</b> to <b>p</b>",
+                "Importance": 100,
+                "FuncKey": "cache_redzone_test",
+                "FuncName": "cache_redzone_test"
+            },
+            {
+                "File": "testapp.c",
+                "Line": 182,
+                "Tip": "<b>p</b> is used as the 2nd parameter in function <b>cache_free</b> (<b>p</b> can be null)",
+                "RawTip": "<b>p</b> is used as the 2nd parameter in function <b>cache_free</b> (<b>p</b> can be null)",
+                "Importance": 100,
+                "FuncKey": "cache_redzone_test",
+                "FuncName": "cache_redzone_test"
+            },
+            {
+                "File": "cache.c",
+                "Line": 110,
+                "Tip": "<b>ptr</b> is used as the 2nd parameter in function <b>do_cache_free</b> (<b>ptr</b> can be null)",
+                "RawTip": "<b>ptr</b> is used as the 2nd parameter in function <b>do_cache_free</b> (<b>ptr</b> can be null)",
+                "Importance": 100,
+                "FuncKey": "cache_free",
+                "FuncName": "cache_free"
+            },
+            {
+                "File": "cache.c",
+                "Line": 123,
+                "Tip": "Store <b>ptr</b> to <b>pre</b>",
+                "RawTip": "Store <b>ptr</b> to <b>pre</b>",
+                "Importance": 100,
+                "FuncKey": "do_cache_free",
+                "FuncName": "do_cache_free"
+            },
+            {
+                "File": "cache.c",
+                "Line": 124,
+                "Tip": "Store <b>&amp;(pre[-1])</b> to <b>pre</b>",
+                "RawTip": "Store <b>&amp;(pre[-1])</b> to <b>pre</b>",
+                "Importance": 100,
+                "FuncKey": "do_cache_free",
+                "FuncName": "do_cache_free"
+            },
+            {
+                "File": "cache.c",
+                "Line": 125,
+                "Tip": "Load value from <b>pre</b>",
+                "RawTip": "Load value from <b>pre</b>",
+                "Importance": 100,
+                "FuncKey": "do_cache_free",
+                "FuncName": "do_cache_free"
+            }
+        ],
+        "ReportChecker": "PSA NULL Pointer Dereference Checker"
+    }
+]

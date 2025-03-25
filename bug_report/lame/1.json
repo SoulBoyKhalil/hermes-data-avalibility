@@ -1,0 +1,40 @@
+{
+    "Dominated": false,
+    "Score": 60,
+    "Valid": true,
+    "Related to Persistence": false,
+    "Bug Type": "NULL Pointer Dereference",
+    "Bug Type Description": "CWE-476",
+    "Importance": "high",
+    "Classification": "security",
+    "DiagSteps": [
+        {
+            "File": "libmp3lame/id3tag.c",
+            "Line": 968,
+            "Tip": "Store <b>null</b> to <b>dup</b>",
+            "RawTip": "Store <b>null</b> to <b>dup</b>",
+            "Importance": 100,
+            "FuncKey": "id3tag_set_userinfo_latin1",
+            "FuncName": "id3tag_set_userinfo_latin1"
+        },
+        {
+            "File": "libmp3lame/id3tag.c",
+            "Line": 970,
+            "Tip": "Load value from <b>dup</b>",
+            "RawTip": "Load value from <b>dup</b>",
+            "Importance": 100,
+            "FuncKey": "id3tag_set_userinfo_latin1",
+            "FuncName": "id3tag_set_userinfo_latin1"
+        },
+        {
+            "File": "libmp3lame/id3tag.c",
+            "Line": 970,
+            "Tip": "Store <b>0</b> to <b>dup[a]</b>",
+            "RawTip": "Store <b>0</b> to <b>dup[a]</b>",
+            "Importance": 100,
+            "FuncKey": "id3tag_set_userinfo_latin1",
+            "FuncName": "id3tag_set_userinfo_latin1"
+        }
+    ],
+    "ReportChecker": "PSA NULL Pointer Dereference Checker"
+}

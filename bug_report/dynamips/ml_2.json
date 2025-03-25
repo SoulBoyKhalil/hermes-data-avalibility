@@ -1,0 +1,31 @@
+{
+    "Dominated": false,
+    "Score": 60,
+    "Valid": true,
+    "Related to Persistence": false,
+    "Bug Type": "Memory Leak",
+    "Bug Type Description": "CWE-401",
+    "Importance": "high",
+    "Classification": "performance",
+    "DiagSteps": [
+        {
+            "File": "common/pci_dev.c",
+            "Line": 295,
+            "Tip": "Store the allocated memory to <b>dev</b>",
+            "RawTip": "Store the allocated memory to <b>dev</b>",
+            "Importance": 100,
+            "FuncKey": "pci_dev_add",
+            "FuncName": "pci_dev_add"
+        },
+        {
+            "File": "common/dev_c2600_pci.c",
+            "Line": 193,
+            "Tip": "Function <b>pci_dev_add</b> executes and returns, the allocated memory is leaked",
+            "RawTip": "Function <b>pci_dev_add</b> executes and returns, the allocated memory is leaked",
+            "Importance": 100,
+            "FuncKey": "dev_c2600_pci_init",
+            "FuncName": "dev_c2600_pci_init"
+        }
+    ],
+    "ReportChecker": "PSA Memory Leak Checker"
+}

@@ -1,0 +1,58 @@
+{
+    "Dominated": false,
+    "Score": 60,
+    "Valid": true,
+    "Related to Persistence": false,
+    "Bug Type": "NULL Pointer Dereference",
+    "Bug Type Description": "CWE-476",
+    "Importance": "high",
+    "Classification": "security",
+    "DiagSteps": [
+        {
+            "File": "memcached.c",
+            "Line": 637,
+            "Tip": "Store <b>null</b> to <b>%temp_var3</b>",
+            "RawTip": "Store <b>null</b> to <b>%temp_var3</b>",
+            "Importance": 100,
+            "FuncKey": "conn_io_queue_get",
+            "FuncName": "conn_io_queue_get"
+        },
+        {
+            "File": "memcached.c",
+            "Line": 638,
+            "Tip": "Return <b>%temp_var3</b> to caller",
+            "RawTip": "Return <b>%temp_var3</b> to caller",
+            "Importance": 100,
+            "FuncKey": "conn_io_queue_get",
+            "FuncName": "conn_io_queue_get"
+        },
+        {
+            "File": "storage.c",
+            "Line": 468,
+            "Tip": "Store the return value of function <b>conn_io_queue_get</b> to <b>q</b>",
+            "RawTip": "Store the return value of function <b>conn_io_queue_get</b> to <b>q</b>",
+            "Importance": 100,
+            "FuncKey": "storage_return_cb",
+            "FuncName": "storage_return_cb"
+        },
+        {
+            "File": "storage.c",
+            "Line": 469,
+            "Tip": "Load value from <b>q</b>",
+            "RawTip": "Load value from <b>q</b>",
+            "Importance": 100,
+            "FuncKey": "storage_return_cb",
+            "FuncName": "storage_return_cb"
+        },
+        {
+            "File": "storage.c",
+            "Line": 469,
+            "Tip": "Load value from <b>q-&gt;count</b>",
+            "RawTip": "Load value from <b>q-&gt;count</b>",
+            "Importance": 100,
+            "FuncKey": "storage_return_cb",
+            "FuncName": "storage_return_cb"
+        }
+    ],
+    "ReportChecker": "PSA NULL Pointer Dereference Checker"
+}

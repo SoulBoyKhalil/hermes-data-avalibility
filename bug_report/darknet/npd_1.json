@@ -1,0 +1,40 @@
+{
+    "Dominated": false,
+    "Score": 60,
+    "Valid": true,
+    "Related to Persistence": false,
+    "Bug Type": "Unchecked Return Value to NULL Pointer Dereference",
+    "Bug Type Description": "CWE-690",
+    "Importance": "high",
+    "Classification": "security",
+    "DiagSteps": [
+        {
+            "File": "src/classifier.c",
+            "Line": 23,
+            "Tip": "Store the return value of function <b>strchr</b> to <b>p</b>",
+            "RawTip": "Store the return value of function <b>strchr</b> to <b>p</b>",
+            "Importance": 100,
+            "FuncKey": "get_regression_values",
+            "FuncName": "get_regression_values"
+        },
+        {
+            "File": "src/classifier.c",
+            "Line": 24,
+            "Tip": "Load value from <b>p</b>",
+            "RawTip": "Load value from <b>p</b>",
+            "Importance": 100,
+            "FuncKey": "get_regression_values",
+            "FuncName": "get_regression_values"
+        },
+        {
+            "File": "src/classifier.c",
+            "Line": 24,
+            "Tip": "Store <b>0</b> to <b>p</b>",
+            "RawTip": "Store <b>0</b> to <b>p</b>",
+            "Importance": 100,
+            "FuncKey": "get_regression_values",
+            "FuncName": "get_regression_values"
+        }
+    ],
+    "ReportChecker": "PSA NULL Pointer Dereference Checker"
+}

@@ -1,0 +1,40 @@
+{
+    "Dominated": false,
+    "Score": 60,
+    "Valid": true,
+    "Related to Persistence": false,
+    "Bug Type": "Memory Leak",
+    "Bug Type Description": "CWE-401",
+    "Importance": "high",
+    "Classification": "performance",
+    "DiagSteps": [
+        {
+            "File": "common/rommon_var.c",
+            "Line": 110,
+            "Tip": "Store the allocated memory to <b>new_value</b>",
+            "RawTip": "Store the allocated memory to <b>new_value</b>",
+            "Importance": 100,
+            "FuncKey": "rommon_var_set",
+            "FuncName": "rommon_var_set"
+        },
+        {
+            "File": "common/rommon_var.c",
+            "Line": 119,
+            "Tip": "Return to caller",
+            "RawTip": "Return to caller",
+            "Importance": 100,
+            "FuncKey": "rommon_var_set",
+            "FuncName": "rommon_var_set"
+        },
+        {
+            "File": "common/rommon_var.c",
+            "Line": 139,
+            "Tip": "Function <b>rommon_var_set</b> executes and returns, the allocated memory is leaked",
+            "RawTip": "Function <b>rommon_var_set</b> executes and returns, the allocated memory is leaked",
+            "Importance": 100,
+            "FuncKey": "rommon_var_add",
+            "FuncName": "rommon_var_add"
+        }
+    ],
+    "ReportChecker": "PSA Memory Leak Checker"
+}

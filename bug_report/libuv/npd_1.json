@@ -1,0 +1,49 @@
+{
+    "Dominated": false,
+    "Score": 60,
+    "Valid": true,
+    "Related to Persistence": false,
+    "Bug Type": "NULL Pointer Dereference",
+    "Bug Type Description": "CWE-476",
+    "Importance": "high",
+    "Classification": "security",
+    "DiagSteps": [
+        {
+            "File": "src/unix/pipe.c",
+            "Line": 461,
+            "Tip": "<b>null</b> is used as the 2nd parameter in function <b>uv_pipe_getsockname</b>",
+            "RawTip": "<b>null</b> is used as the 2nd parameter in function <b>uv_pipe_getsockname</b>",
+            "Importance": 100,
+            "FuncKey": "uv_pipe_chmod",
+            "FuncName": "uv_pipe_chmod"
+        },
+        {
+            "File": "src/unix/pipe.c",
+            "Line": 403,
+            "Tip": "<b>buffer</b> is used as the 3rd parameter in function <b>uv__pipe_getsockpeername</b> (<b>buffer</b> can be null)",
+            "RawTip": "<b>buffer</b> is used as the 3rd parameter in function <b>uv__pipe_getsockpeername</b> (<b>buffer</b> can be null)",
+            "Importance": 100,
+            "FuncKey": "uv_pipe_getsockname",
+            "FuncName": "uv_pipe_getsockname"
+        },
+        {
+            "File": "src/unix/pipe.c",
+            "Line": 396,
+            "Tip": "Load value from <b>buffer</b>",
+            "RawTip": "Load value from <b>buffer</b>",
+            "Importance": 100,
+            "FuncKey": "uv__pipe_getsockpeername",
+            "FuncName": "uv__pipe_getsockpeername"
+        },
+        {
+            "File": "src/unix/pipe.c",
+            "Line": 396,
+            "Tip": "Store <b>0</b> to <b>buffer[addrlen]</b>",
+            "RawTip": "Store <b>0</b> to <b>buffer[addrlen]</b>",
+            "Importance": 100,
+            "FuncKey": "uv__pipe_getsockpeername",
+            "FuncName": "uv__pipe_getsockpeername"
+        }
+    ],
+    "ReportChecker": "PSA NULL Pointer Dereference Checker"
+}

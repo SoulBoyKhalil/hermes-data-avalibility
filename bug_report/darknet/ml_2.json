@@ -1,0 +1,40 @@
+{
+    "Dominated": false,
+    "Score": 60,
+    "Valid": true,
+    "Related to Persistence": false,
+    "Bug Type": "Memory Leak",
+    "Bug Type Description": "CWE-401",
+    "Importance": "high",
+    "Classification": "performance",
+    "DiagSteps": [
+        {
+            "File": "src/utils.c",
+            "Line": 38,
+            "Tip": "Store the allocated memory to <b>ptr</b>",
+            "RawTip": "Store the allocated memory to <b>ptr</b>",
+            "Importance": 100,
+            "FuncKey": "xcalloc_location",
+            "FuncName": "xcalloc_location"
+        },
+        {
+            "File": "src/network.c",
+            "Line": 250,
+            "Tip": "Store the return value of function <b>xcalloc_location</b> to <b>net-&gt;delta_rolling_max</b>",
+            "RawTip": "Store the return value of function <b>xcalloc_location</b> to <b>net-&gt;delta_rolling_max</b>",
+            "Importance": 100,
+            "FuncKey": "make_network",
+            "FuncName": "make_network"
+        },
+        {
+            "File": "src/network.c",
+            "Line": 1491,
+            "Tip": "Function <b>make_network</b> executes and returns, the allocated memory is leaked",
+            "RawTip": "Function <b>make_network</b> executes and returns, the allocated memory is leaked",
+            "Importance": 100,
+            "FuncKey": "combine_train_valid_networks",
+            "FuncName": "combine_train_valid_networks"
+        }
+    ],
+    "ReportChecker": "PSA Memory Leak Checker"
+}

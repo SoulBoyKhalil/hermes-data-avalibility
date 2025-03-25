@@ -1,0 +1,40 @@
+{
+    "Dominated": false,
+    "Score": 60,
+    "Valid": true,
+    "Related to Persistence": false,
+    "Bug Type": "NULL Pointer Dereference",
+    "Bug Type Description": "CWE-476",
+    "Importance": "high",
+    "Classification": "security",
+    "DiagSteps": [
+        {
+            "File": "src/parser.c",
+            "Line": 379,
+            "Tip": "Store <b>null</b> to <b>yolo_layer</b>",
+            "RawTip": "Store <b>null</b> to <b>yolo_layer</b>",
+            "Importance": 100,
+            "FuncKey": "parse_contrastive",
+            "FuncName": "parse_contrastive"
+        },
+        {
+            "File": "src/parser.c",
+            "Line": 383,
+            "Tip": "Load value from <b>yolo_layer</b>",
+            "RawTip": "Load value from <b>yolo_layer</b>",
+            "Importance": 100,
+            "FuncKey": "parse_contrastive",
+            "FuncName": "parse_contrastive"
+        },
+        {
+            "File": "src/parser.c",
+            "Line": 383,
+            "Tip": "Load value from <b>yolo_layer-&gt;type</b>",
+            "RawTip": "Load value from <b>yolo_layer-&gt;type</b>",
+            "Importance": 100,
+            "FuncKey": "parse_contrastive",
+            "FuncName": "parse_contrastive"
+        }
+    ],
+    "ReportChecker": "PSA NULL Pointer Dereference Checker"
+}
