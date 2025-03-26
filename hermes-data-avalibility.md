@@ -23,9 +23,9 @@
 | ppsspp    | NPD       | https://github.com/hrydgard/ppsspp/issues/20064       | https://github.com/hrydgard/ppsspp/issues/20064       | confirmed | 1                 |
 | ppsspp    | NPD       | https://github.com/hrydgard/ppsspp/issues/20069       | https://github.com/hrydgard/ppsspp/issues/20069       | confirmed | 1                 |
 | ppsspp    | ML        | https://github.com/hrydgard/ppsspp/issues/20048       | https://github.com/hrydgard/ppsspp/issues/20048       | confirmed | 1                 |
-| git       | NPD       | [git_npd_1](bug_report/git/git_npd_2.png)             | [git_npd_1](bug_report/git/git_npd_2.png)             | confirmed | 1                 |
-| git       | NPD       | [git_npd_2](bug_report/git/git_npd_3.png)             | [git_npd_2](bug_report/git/git_npd_3.png)             | confirmed | 1                 |
-| git       | ML        | [git_ml_1](bug_report/git/git_ml_1.png)               | [git_ml_1](bug_report/git/git_ml_1.png)               | confirmed | 1                 |
+| git       | NPD       | [git_npd_1](bug_report/git/git_npd_2.png)             | [git_npd_1](bug_report/git/git_npd1_report.png)       | confirmed | 1                 |
+| git       | NPD       | [git_npd_2](bug_report/git/git_npd_3.png)             | [git_npd_2](bug_report/git/git_npd2_report.png)       | confirmed | 1                 |
+| git       | ML        | [git_ml_1](bug_report/git/git_ml_1.png)               | [git_ml_1](bug_report/git/git_ml_1_report.png)        | confirmed | 1                 |
 | binutils  | NPD       | https://sourceware.org/bugzilla/show_bug.cgi?id=30951 | https://sourceware.org/bugzilla/show_bug.cgi?id=30951 | confirmed | 1                 |
 | binutils  | NPD       | [binutils_npd_32707](bug_report/binutils/npd_1.json)  | https://sourceware.org/bugzilla/show_bug.cgi?id=32707 | confirmed | 9                 |
 | binutils  | NPD       | https://sourceware.org/bugzilla/show_bug.cgi?id=30949 | https://sourceware.org/bugzilla/show_bug.cgi?id=30949 | confirmed | 1                 |
